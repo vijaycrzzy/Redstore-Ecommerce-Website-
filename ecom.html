@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+           font-family: 'Poppins', sans-serif;
+        }
+        .con{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .drop li:hover{
+            transform: scale(1.2);
+            transition: transform 0.5s;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+       .drop{
+        display: flex;
+        margin-right: 10px;
+        align-items: center;
+       }
+       .logo{
+        width: 150px;
+        height:50px;
+        margin-left: 10px;
+       }
+       .whole{
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: auto;
+       }
+       .img1{
+        height: 550px;
+        transform: translateY(-10%);
+        width: 700px;
+        margin-left: 50%;
+       }
+       .content{
+        transform: translateY(130%);
+        margin-left: 7%;
+       }
+       h1{
+        font-size: 40px;
+       }
+       .btn{
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 30px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+       }
+       .btn:hover{
+        background-color:#563434;
+        transition: background-color 0.5s;
+       }
+       p{
+        font-weight: 500;
+       }
+       .cart{
+        width: 40px;
+        height:40px;
+       }
+       .whole{
+        background: radial-gradient(#fff,#ffd6d6);
+       }
+      .categories{
+        margin: 70px;
+    
+      }
+      .row1{
+        display: flex;
+    justify-content: space-evenly;
+      }
+      .img2{
+        width: 300px;
+      }
+    .img3{
+        width: 300px;
+        height: 300px;
+    }
+    .col4{
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+    }
+    .hr{
+        transform: translateY(-13px);
+    }
+    .rating i{
+        color: #ff523b;
+    }
+    .col4:hover{
+        transform: translateY(-5px);
+        transition: transform 0.5s;
+    }
+    .exclusive{
+        height: 300px;
+        width: 300px;
+    }
+    .row2{
+        display: flex;
+        margin-left: 20%;
+        margin-top: 50px;
+    }
+    .col6{
+        margin-left: 100px;
+    }
+    .offer{
+        background: radial-gradient(#fff,#ffd6d6);
+        padding-top: 30px;
+        margin-top: 20px;
+    }
+    .testimonials{
+        margin: 80px;
+    }
+    .row3{
+        display: flex;
+        justify-content: space-around;
+    }
+    .col7{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0px 3px 20px 0px rgb(232,232,232);
+        cursor: pointer;
+    }
+    .col7:hover{
+        transform: translateY(-8px);
+        transition: transform 0.5s;
+    }
+    .comment img{
+        border-radius: 50%;
+        width:60px;
+        height: 60px;
+    }
+    .quote i{
+        color: rgb(249, 165, 8);
+        margin-top: 20px;
+       font-size: 25px;
+    }
+    .brands{
+        margin: 100px;
+    }
+    .logos{
+        width: 160px;
+        cursor: pointer;
+        filter: grayscale(100%);
+    }
+    .logos:hover{
+        filter: grayscale(0%);
+    }
+    .row4{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-col1 img{
+        width: 150px;
+    }
+    .logome img{
+       width: 150px;
+       border: 3px solid white;
+       background-color: none;
+       margin-left: 100px;
+    }
+    .row6{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:30px;
+    }
+    .row6 p,h3,li{
+        color: white;
+    }
+    .row6 li{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .row6 p{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .footcon{
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <div class="whole">
+    <div class="con">
+        <div><img class="logo" src="images/logo.png" alt=""></div>
+        <div>
+            <ul class="drop">
+                <li><a href="#">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Account</a></li>
+                <div><img src="images/cart.png" alt="" class="cart"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+    <div><h1>Give Your Workout A New Style!</h1></div>
+    <div><p>Success isn't always greatness. Its about consistency. Consistent<br> hard work gains success. Greatness will come</p></div>
+    <div><button class="btn">Explore Now<i style="margin-left:7px;" class="fa fa-long-arrow-right" aria-hidden="true"></i></button></div>
+</div>
+    <div><img class="img1" src="images/image1.png" alt=""></div>
+</div>
+
+<!--------------------feautred Categories--------------------------->
+<div class="categories">
+    <div class="row1">
+        <div class="col1"><img class="img2" src="images/category-1.jpg" alt=""></div>
+        <div class="col2"><img class="img2" src="images/category-2.jpg" alt=""></div>
+        <div class="col3"><img class="img2" src="images/category-3.jpg" alt=""></div>
+    </div>
+</div>
+<!------------------------featured products------------>
+<div class="products">
+<h2 style="text-align: center;" class="title">Featured Products<hr class="hr" size="5" width="150px" color="red"> </h2> 
+<div class="row1">
+    <div class="col4">
+    <div><img src="images/product-1.jpg" alt="" class="img3"></div>
+    <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+    <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div>$50.00</div>
+    </div>
+    <div class="col4">
+        <div><img src="images/product-2.jpg" alt="" class="img3"></div>
+        <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+        <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        </div>
+        <div>$50.00</div>
+        </div>
+    
+            <div class="col4">
+        <div><img src="images/product-3.jpg" alt="" class="img3"></div>
+        <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+        <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div>$50.00</div>
+        </div>
+
+        <div class="col4">
+            <div><img src="images/product-4.jpg" alt="" class="img3"></div>
+            <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+            <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+            <div>$50.00</div>
+            </div>
+</div>
+</div>
+</div>
+<!--------------------Latest Products----------------->
+<h2 style="text-align: center;" class="title">Latest Products<hr class="hr" size="5" width="150px" color="red"> </h2> 
+<div class="row1">
+    <div class="col4">
+    <div><img src="images/product-5.jpg" alt="" class="img3"></div>
+    <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+    <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div>$50.00</div>
+    </div>
+    <div class="col4">
+        <div><img src="images/product-6.jpg" alt="" class="img3"></div>
+        <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+        <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        </div>
+        <div>$50.00</div>
+        </div>
+    
+            <div class="col4">
+        <div><img src="images/product-7.jpg" alt="" class="img3"></div>
+        <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+        <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div>$50.00</div>
+        </div>
+
+        <div class="col4">
+            <div><img src="images/product-8.jpg" alt="" class="img3"></div>
+            <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+            <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            </div>
+            <div>$50.00</div>
+            </div>
+</div>
+</div>
+</div>
+<!----------------------Offer-------------------->
+<div class="offer">
+    <div class="row2">
+        <div class="col5"><img src="images/exclusive.png" alt="" class="exclusive"></div>
+       <div class="col6">
+        <p>Exclusively Available on RedStore</p>
+        <h2>Smart Band 4</h2>
+        <p style="margin-bottom:35px;">The Mi Smart Band 4 features a 39.9% (than Mi Band 3) AMoLED  color<br>full touch display with adjustable brightness, so everything is clear as can be</p>
+        <a class="btn">Buy Now <i style="margin-left:7px;" class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    </div>
+</div>
+<!------------Testimonials---------------->
+<div class="testimonials">
+<div class="row3">
+       <div class="col7">
+       <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui recusandae quisquam dolore cum eaque consectetur, ducimus sit. Tenetur vel accusamus consequatur ut autem modi ipsum, rem nisi sequi aliquid atque!</p>
+       <diV class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+       </diV>
+       <div class="comment"><img src="images/user-1.png" alt=""></div>
+       <h4 style="transform: translateY(-20px);">Sean Parker</h4>
+    </div>
+    <div class="col7">
+        <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui recusandae quisquam dolore cum eaque consectetur, ducimus sit. Tenetur vel accusamus consequatur ut autem modi ipsum, rem nisi sequi aliquid atque!</p>
+        <diV class="rating">
+         <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+        </diV>
+        <div class="comment"><img src="images/user-2.png" alt=""></div>
+        <h4 style="transform: translateY(-20px);">Mike Smith</h4>
+     </div>
+     <div class="col7">
+        <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui recusandae quisquam dolore cum eaque consectetur, ducimus sit. Tenetur vel accusamus consequatur ut autem modi ipsum, rem nisi sequi aliquid atque!</p>
+        <diV class="rating">
+         <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+        </diV>
+        <div class="comment"><img src="images/user-3.png" alt=""></div>
+        <h4 style="transform: translateY(-20px);">Mabel Joe</h4>
+     </div>
+    </div>
+</div>
+
+<!---------------------Brands----------------------->
+<div class="brands">
+    <div class="row4">
+        <div class="logos"><img src="images/logo-godrej.png" alt=""></div>
+        <div class="logos"><img src="images/logo-oppo.png" alt=""></div>
+        <div class="logos"><img src="images/logo-coca-cola.png" alt=""></div>
+        <div class="logos"><img src="images/logo-paypal.png" alt=""></div>
+        <div class="logos"><img src="images/logo-philips.png" alt=""></div>
+    </div>
+</div>
+<!------------------------Footer--------------------->
+<div class="footer">
+    <div class="footcon">
+<div class="row6">
+    <div class="footer-col1"><h3>Download Our App</h3>
+    <p>Download App for android and ios mobile phone</p>
+    <img  src="images/play-store.png" alt="">
+    <img src="images/app-store.png" alt="">
+    </div>
+   
+    <div class="logome">
+        <img src="images/logo.png" alt="">
+        <p>Our Purpose is To Sustainably Make the Pleasure and<br>Benefits of Sports Accessible to the Many</p>
+    </div>
+
+    <div>
+        <ul> <h3>Useful Links</h3>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+        </ul>
+    </div>
+
+    <div>
+        <ul> <h3>Follow Us</h3>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagran</li>
+            <li>Youtube</li>
+        </ul>
+    </div>
+</div>
+<div><hr size="3" width="1500px" color="white"></div>
+<div><p style="color: white;margin-left:45%">Copyright 2022 - Vijay</p></div>
+</div>
+</div>
+</body>
+</html>
