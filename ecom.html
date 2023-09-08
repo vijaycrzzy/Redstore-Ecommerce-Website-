@@ -83,6 +83,9 @@
         width: 40px;
         height:40px;
        }
+       .cart:hover{
+        cursor: pointer;
+       }
        .whole{
         background: radial-gradient(#fff,#ffd6d6);
        }
@@ -205,6 +208,78 @@
     .footcon{
         background-color: black;
     }
+    .add-to-cart-button {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease; 
+    }
+
+   .add-to-cart-button:hover {
+    background-color: #0056b3; 
+    }
+    .imag{
+        height: 200px;
+        width: 200px;
+    }
+    .cart-con{
+        display: flex;
+        flex-direction: row;
+        margin-left: 350px;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .price_prod{
+        display: flex;
+        flex-direction: column;
+    }
+    h4{
+        padding: 50px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .bttn{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 180px;
+        background-color: #ff5733; 
+        color: white;             
+        border: none;            
+        padding: 5px 10px;        
+        cursor: pointer;          
+        font-weight: bold;       
+        border-radius: 4px;      
+    }
+    #totalprice{
+        margin-left: 600px;
+    }
+    #value{
+        margin-left: 100px;
+    }
+    .total-in-cart{
+        display: flex;
+        flex-direction: row;
+    }
+    .cartwhole{
+        display: flex;
+        flex-direction: row;
+    }
+    #deletebtn{
+        background-color: #ff5733; /* Red background color */
+    color: white;             /* White text color */
+    border: none;             /* Remove button border */
+    padding: 5px 10px;        /* Add padding to the button */
+    cursor: pointer;          /* Change cursor to a pointer on hover */
+    font-weight: bold;        /* Make the text bold */
+    border-radius: 4px;       /* Add rounded corners */
+    }
     </style>
 </head>
 <body>
@@ -218,7 +293,9 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Account</a></li>
-                <div><img src="images/cart.png" alt="" class="cart"></div>
+                <div class="cartwhole"><img src="images/cart.png" alt="" class="cart">
+                    <div id="cartnumber"></div>
+                </div>
             </ul>
         </div>
     </div>
@@ -244,37 +321,41 @@
 <div class="row1">
     <div class="col4">
     <div><img src="images/product-1.jpg" alt="" class="img3"></div>
-    <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+    <div><h3 style="margin:0px ;">Puma - Red TShirt</h3></div>
     <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star-o" aria-hidden="true"></i>
     </div>
     <div>$50.00</div>
+    <button class="add-to-cart-button">Add to Cart</button>
     </div>
     <div class="col4">
         <div><img src="images/product-2.jpg" alt="" class="img3"></div>
-        <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+        <div><h3 style="margin:0px ;">HRX - Black Shoes</h3></div>
         <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star-half-o" aria-hidden="true"></i>
         </div>
-        <div>$50.00</div>
+        <div>$55.00</div>
+        <button class="add-to-cart-button">Add to Cart</button>
         </div>
     
             <div class="col4">
         <div><img src="images/product-3.jpg" alt="" class="img3"></div>
-        <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+        <div><h3 style="margin:0px ;">Puma - Grey Tracks</h3></div>
         <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star-o" aria-hidden="true"></i>
         </div>
-        <div>$50.00</div>
+        <div>$60.00</div>
+        <button class="add-to-cart-button">Add to Cart</button>
         </div>
 
         <div class="col4">
             <div><img src="images/product-4.jpg" alt="" class="img3"></div>
-            <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+            <div><h3 style="margin:0px ;">Puma - Blue TShirt</h3></div>
             <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star-half-o" aria-hidden="true"></i>
             </div>
-            <div>$50.00</div>
+            <div>$65.00</div>
+            <button class="add-to-cart-button">Add to Cart</button>
             </div>
 </div>
 </div>
@@ -284,37 +365,41 @@
 <div class="row1">
     <div class="col4">
     <div><img src="images/product-5.jpg" alt="" class="img3"></div>
-    <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+    <div><h3 style="margin:0px ;">Reebok - Grey Shoes</h3></div>
     <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star-o" aria-hidden="true"></i>
     </div>
-    <div>$50.00</div>
+    <div>$70.00</div>
+    <button class="add-to-cart-button">Add to Cart</button>
     </div>
     <div class="col4">
         <div><img src="images/product-6.jpg" alt="" class="img3"></div>
-        <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+        <div><h3 style="margin:0px ;">Puma - Black Tshirt</h3></div>
         <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star-half-o" aria-hidden="true"></i>
         </div>
-        <div>$50.00</div>
+        <div>$75.00</div>
+        <button class="add-to-cart-button">Add to Cart</button>
         </div>
     
             <div class="col4">
         <div><img src="images/product-7.jpg" alt="" class="img3"></div>
-        <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+        <div><h3 style="margin:0px ;">HRX - Socks</h3></div>
         <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star-o" aria-hidden="true"></i>
         </div>
-        <div>$50.00</div>
+        <div>$80.00</div>
+        <button class="add-to-cart-button">Add to Cart</button>
         </div>
 
         <div class="col4">
             <div><img src="images/product-8.jpg" alt="" class="img3"></div>
-            <div><h4 style="margin:0px ;">Red Printed Shirt</h4></div>
+            <div><h3 style="margin:0px ;">Titan Watch</h3></div>
             <div class="rating" ><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star-half-o" aria-hidden="true"></i>
             </div>
-            <div>$50.00</div>
+            <div>$85.00</div>
+            <button class="add-to-cart-button">Add to Cart</button>
             </div>
 </div>
 </div>
@@ -341,7 +426,7 @@
         <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
        </diV>
        <div class="comment"><img src="images/user-1.png" alt=""></div>
-       <h4 style="transform: translateY(-20px);">Sean Parker</h4>
+       <h4 style="transform: translateY(-20px); padding:0px;">Sean Parker</h4>
     </div>
     <div class="col7">
         <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
@@ -350,7 +435,7 @@
          <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
         </diV>
         <div class="comment"><img src="images/user-2.png" alt=""></div>
-        <h4 style="transform: translateY(-20px);">Mike Smith</h4>
+        <h4 style="transform: translateY(-20px);  padding:0px;">Mike Smith</h4>
      </div>
      <div class="col7">
         <div class="quote"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
@@ -359,11 +444,22 @@
          <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
         </diV>
         <div class="comment"><img src="images/user-3.png" alt=""></div>
-        <h4 style="transform: translateY(-20px);">Mabel Joe</h4>
+        <h4 style="transform: translateY(-20px);  padding:0px;">Mabel Joe</h4>
      </div>
     </div>
 </div>
 
+<!---------------------cart----------------------->
+<h2 style="text-align: center;" class="title">Cart<hr class="hr" size="5" width="150px" color="red"> </h2> 
+<div class="cart-con">
+    <div class="product"></div>
+    <h2 class="price_prod"></h2>
+    <div class="btns" id="button"></div>
+</div>
+<div class="total-in-cart">
+<h1 id="totalprice"></h1>
+<h1 id="value"></h1>
+</div>
 <!---------------------Brands----------------------->
 <div class="brands">
     <div class="row4">
@@ -411,5 +507,7 @@
 <div><p style="color: white;margin-left:45%">Copyright 2022 - Vijay</p></div>
 </div>
 </div>
+<script src="cart.js">
+</script>
 </body>
 </html>
